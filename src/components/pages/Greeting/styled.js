@@ -3,30 +3,38 @@ import { ButtonForm } from "../../Form/styled";
 
 export const GreetingContainer = styled.section`
   display: flex;
+  flex-direction: column-reverse;
   align-items: center;
-  justify-content: center;
   width: 80%;
   max-width: 100%;
   div {
-    width: 50%;
+    width: 600px;
     margin: 15px;
   }
   h2 {
-    font-size: 60px;
+    font-size: 40px;
     margin: 0;
   }
 
-  @media (max-width: 540px) {
-    display: flex;
-    align-items: unset;
-    justify-content: unset;
-    flex-direction: column;
+  @media (max-width: 620px) {
     div {
-      width: 100%;
-      margin: 15px;
+      width: 450px;
     }
   }
-  @media (max-width: 270px) {
+  @media (max-width: 460px) {
+    div {
+      width: 350px;
+    }
+  }
+  @media (max-width: 350px) {
+    div {
+      width: 280px;
+    }
+    h2 {
+      font-size: 30px;
+    }
+  }
+  @media (max-width: 280px) {
     position: fixed;
   }
 `;
